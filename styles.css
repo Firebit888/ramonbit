@@ -1,108 +1,69 @@
 * {
     box-sizing: border-box;
     font-family: 'Press Start 2P', cursive;
-  }
-  
-  body {
+}
+
+body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #ddd;
-    flex: 1
-  }
-  
-  /* Style the top navigation bar */
-  .topnav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topnav {
+    width: 100%;
     overflow: hidden;
     background-color: #4B0082;
-  }
-  
-  /* Style the topnav links */
-  .topnav a {
-    float: left;
-    display: block;
+    text-align: center;
+}
+
+.topnav a {
+    display: inline-block;
     color: lawngreen;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
-  
-  /* Change color on hover */
-  .topnav a:hover {
+}
+
+.topnav a:hover {
     background-color: #ddd;
     color: #8B008B;
-  }
-  
-  /* Style the content */
-  .content {
+}
+
+.content {
     background-color: #ddd;
     padding: 10px;
-    height: 200px; /* Should be removed. Only for demonstration */
-  }
+    width: 100%;
+}
 
-  .div2 {
-    width: 1450px;
+.div2, .div3, .div4, .div5, .div6, .div7, .div8, .div10 {
+    width: 90%;
+    max-width: 1450px;
     border: 15px solid green;
     padding: 50px;
-    margin: 20px;
-  }
-  .div3 {
-    width: 1450px;
-    border: 15px solid green;
-    padding: 50px;
-    margin: 20px;
-  }
+    margin: 20px auto;
+}
 
-  .div4 {
-    width: 500px;
-    border: 15px solid green;
-    padding: 50px;
-    margin: 20px;
-  }
+@media (min-width: 768px) {
+    .div4, .div6, .div7 {
+        width: 100%;
+        max-width: 500px;
+        float: none;
+    }
 
-  .div5 {
-    width: 1450px;
-    border: 15px solid green;
-    padding: 50px;
-    margin: 20px;
-    float: left;
-  }
+    .div5 {
+        float: left;
+        max-width: 1450px;
+    }
 
-  .div6 {
-    width: 500px;
-    border: 15px solid green;
-    padding: 50px;
-    margin: 20px;
-    float: right;
-  }
+    .div7 {
+        max-width: 918px;
+    }
+}
 
-  .div7 {
-    width: 918px;
-    border: 15px solid green;
-    padding: 55px;
-    margin: 20px;
-    float: right;
-  }
-
-  .div8 {
-    width: 1458px;
-    border: 15px solid green;
-    padding: 50px;
-    margin: 20px;
-  }
-  .div10 {
-    width: 1450px;
-    border: 15px solid green;
-    padding: 50px;
-    margin: 20px;
-  }
-
-  .linked{
-    text-decoration: none;
-    text-decoration: none;
+a {
+    color: rgb(67, 0, 252);
     text-decoration: underline;
-    text-decoration: underline;
-    
-  }
-  a {
-      color: rgb(67, 0, 252);
-  }
+}
